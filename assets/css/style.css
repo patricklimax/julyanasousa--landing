@@ -1,0 +1,110 @@
+* { margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* background-color: #520026; */
+
+.header {
+    height: 120px;
+    background-color: #520026;
+    width: 100vw;
+}
+
+.head-content {
+    height: 120px;
+    width: 1000px;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.head-content--logo {
+    width: 24%;
+    height: 100%;
+}
+
+.head-content--logo img {
+    /* width: 100%; */
+    margin-top: 5px;
+    height: 110px;
+}
+
+.head-content--menu {
+    width: 57%;
+    height: 100%;
+}
+
+.head-content--menu nav {
+    height: 100%;
+}
+
+.head-content--menu nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+    height: 100%;
+}
+
+.head-content--menu ul a {
+    color: #dbdbdb;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 5px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #520026;
+}
+
+.head-content--menu ul a:hover {
+    border: 2px solid #fff;
+    border-bottom-right-radius: 20px;
+    color: #520026;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #F7CDE8;
+}
+
+.head-content--social {
+    height: 100%;
+    width: 20%;
+}
+
+.head-content--social img {
+    height: 40px;
+}
+
+.head-content--social ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.head-content--social ul li {
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #fff;
+}
+
+.head-content--social ul li:hover {
+    border: 2px solid #F7CDE8;
+    background-color: #F7CDE8;
+    box-shadow: 0px 0px 10px #F7CDE8;
+}
+
+.head-content--social ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.banner--content {
+    background-image: url('../imagem/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
