@@ -1,10 +1,15 @@
 * { margin: 0; padding: 0; box-sizing: border-box;}
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
 /* background-color: #520026; */
 
+/* header */
 .header {
     height: 120px;
     background-color: #520026;
@@ -15,6 +20,7 @@ body {
     box-shadow: 0px 0px 10px #eee;
 }
 
+/* header central */
 .head-content {
     height: 120px;
     width: 1000px;
@@ -24,6 +30,7 @@ body {
     align-items: center;
 }
 
+/* header--logo */
 .head-content--logo {
     width: 24%;
     height: 100%;
@@ -34,6 +41,7 @@ body {
     height: 110px;
 }
 
+/* header--menu nav */
 .head-content--menu {
     width: 57%;
     height: 100%;
@@ -69,6 +77,7 @@ body {
     background-color: #eee;
 }
 
+/* header media social */
 .head-content--social {
     height: 100%;
     width: 20%;
@@ -104,6 +113,7 @@ body {
     list-style: none;
 }
 
+/* sectio 01 - banner */
 .banner {
     width: 100vw;
     background-color: #520026;
@@ -131,7 +141,7 @@ body {
     color: #fff;
     text-shadow: 1px 1px 5px #000;  
 }
-
+/* texto principal do banner */
 .content--text h3 {
     font-size: 70px;
 }
@@ -140,6 +150,7 @@ body {
     font-size: 30px;
 }
 
+/* formulário do banner principal */
 .content--form {
     width: 360px;
     height: 440px;
@@ -148,7 +159,6 @@ body {
     border-radius: 10px;
 }
     
-
 .content--form h3,
 .content--form h4 {
     color: #520026;
@@ -239,7 +249,9 @@ form a{
     align-items: center;
     justify-content: center;
 }
+/* fim do formulário */
 
+/* css geral das sections */
 .default {
     width: 100vw;
 }
@@ -261,7 +273,6 @@ form a{
     background-color: #aaa;
     margin: auto;
 }
-
 
 .default-content {
     width: 1000px;
@@ -291,8 +302,8 @@ form a{
     padding: 10px 30px;
 }
 
-.default-content--body.about,
-.default-content--body.acting  {
+.default-content--body.about
+/* .default-content--body.acting  */ {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -303,7 +314,6 @@ form a{
 .default-content--body--img {
     flex:1;
 }
-
 
 .default-content--body--img img {
     height: 300px;
@@ -316,12 +326,7 @@ form a{
     display: flex;
 }
 
-.acting h2 {
-    font-weight: 500;
-    font-size:17px;
-}
-
-.about a {
+.button01 a {
     display: block;
     margin-top: 20px;
     border: 1px solid #eee;
@@ -335,38 +340,17 @@ form a{
     text-decoration: none;
 }
 
-.about a:hover {
+.button01 a:hover {
     background-color: #eee;
     color: #520026;
     transition: 0.555s;
 }
 
-.acting--areas--prev {
-    display: flex;
-}
-
-.acting--areas--others {
-    margin-top: 20px;
-}
-
-.acting--areas--others--areas {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.acting--areas--others--area h2 {
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.acting--areas--others--areas img {
-    width: 100px;
-    border-radius: 20px;
-}
-
-.acting--areas--others--area a {
-    width: 160px;
-}
+/* areas de atuação */
+/* 
+.acting {
+    background-color: #10c400;
+} */
 
 .acting h2 {
     font-size: 18px;
@@ -379,11 +363,7 @@ form a{
     margin-right: 5px;
 }
 
-.default-content--body--text.acting {
-    padding: 10px;
-}
-
-.acting a {
+.button02 a {
     display: block;
     margin-top: 20px;
     border: 1px solid #520026;
@@ -397,11 +377,50 @@ form a{
     text-decoration: none;
 }
 
-.acting a:hover {
+.button02 a:hover {
     background-color: #520026;
     color: #eee;
     transition: 0.555s;
 }
+
+.acting--areas--prev {
+    display: flex;
+    /* background-color: saddlebrown; */
+    gap: 30px;
+}
+
+.acting--areas--others {
+    margin-top: 20px;
+    /* background-color: blueviolet; */
+}
+
+
+.acting--areas--others--areas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.acting--areas--others--areas img {
+    width: 100px;
+    border-radius: 20px;
+}
+
+.acting--areas--others--area a {
+    width: 160px;
+    text-decoration: none;
+    color: #520026;
+}
+
+.acting--areas--others--area a h2 {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+
+
+
 
 .footer {
     width: 100vw;
